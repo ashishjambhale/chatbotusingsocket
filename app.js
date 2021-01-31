@@ -1,15 +1,21 @@
 const express = require('express')
 const app = express()
-
 var siofu = require("socketio-file-upload");
-
 app.set('view engine', 'ejs')
-
 app.use(express.static('public'))
 
+const sqlite = require('sqlite');
 
 
 app.get('/', (req, res) => {
+  
+
+    let db = new sqlite.Database(':chatbot:', (err) => {
+        if (err) {
+          return console.error(err.message);
+        }
+        console.log('Connected to SQlite database.');
+      });
 	res.render('index')
 })
 

@@ -1,9 +1,8 @@
 Chat boot review 
-install all node module using npm install
-http://localhost:3000/  in browser1
-http://localhost:3000/  in browser2
-
-Add name to register yourname 
-
-then start chat using client and server application.
-
+1)install all node module using npm install
+2)http://localhost:3000/  in browser1
+3)http://localhost:3000/  in browser2
+4)Add name to register yourname 
+5)then start chat using client and server application.
+6)npm test command in new terminal for test using chai tool
+7)sqllite connction done (need sql lite to install) 
